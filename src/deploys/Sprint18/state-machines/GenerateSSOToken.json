@@ -1,0 +1,93 @@
+{
+  "Comment": "Selects the vendor for bondnav SSO.",
+  "StartAt": "SelectVendor",
+  "States": {
+    "SelectVendor": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.nextState",
+          "NumericEquals": 1,
+          "Next": "generateVendorSSOToken"
+        },
+        {
+          "Variable": "$.nextState",
+          "NumericEquals": 2,
+          "Next": "generateCapeLogicPayload"
+        }
+      ],
+      "Default": "DefaultState"
+    },
+    "generateVendorSSOToken": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:us-east-1:772387772726:function:generateVendorSSOToken:$LATEST",
+        "Payload": {
+          "Input.$": "$"
+        }
+      },
+      "End": true
+    },
+    "generateCapeLogicPayload": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:us-east-1:772387772726:function:generateCapeLogicPayload:$LATEST",
+        "Payload": {
+          "Input.$": "$"
+        }
+      },
+      "Next": "getMemberInfoPayload"
+    },
+    "getMemberInfoPayload": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:us-east-1:772387772726:function:getMemberInfoPayload:$LATEST",
+        "Payload": {
+          "Input.$": "$"
+        }
+      },
+      "Next": "generateMemberInfoPayloadForHmacHeader"
+    },
+    "generateMemberInfoPayloadForHmacHeader": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:us-east-1:772387772726:function:generatePayloadForHmacHeader:$LATEST",
+        "Payload": {
+          "Input.$": "$"
+        }
+      },
+      "Next": "generateMemberInfoHmacHeader"
+    },
+    "generateMemberInfoHmacHeader": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:us-east-1:772387772726:function:generateHmacHeader:$LATEST",
+        "Payload": {
+          "Input.$": "$"
+        }
+      },
+      "Next": "getMemberInfo"
+    },
+    "getMemberInfo": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:us-east-1:772387772726:function:getMemberInfo:$LATEST",
+        "Payload": {
+          "Input.$": "$"
+        }
+      },
+      "Next": "generateVendorSSOToken"
+    },
+    "DefaultState": {
+      "Type": "Fail",
+      "Error": "DefaultStateError",
+      "Cause": "No Matches!"
+    }
+  }
+}

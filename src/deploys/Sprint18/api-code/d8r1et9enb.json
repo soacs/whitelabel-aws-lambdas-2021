@@ -1,0 +1,43 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "2021-06-14T13:57:24Z",
+    "title" : "/ria"
+  },
+  "host" : "api.sbxaws.foliofn.com",
+  "basePath" : "/ria",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/vendors/bondnav/sso" : {
+      "get" : {
+        "produces" : [ "application/json" ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "schema" : {
+              "$ref" : "#/definitions/Empty"
+            }
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "type" : "aws_proxy",
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:772387772726:function:vendors/invocations",
+          "responses" : {
+            "default" : {
+              "statusCode" : "200"
+            }
+          },
+          "passthroughBehavior" : "when_no_match",
+          "contentHandling" : "CONVERT_TO_TEXT"
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Empty" : {
+      "type" : "object",
+      "title" : "Empty Schema"
+    }
+  }
+}

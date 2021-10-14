@@ -1,0 +1,304 @@
+{
+    "items": [
+        {
+            "basePath": "all-firm-config",
+            "restApiId": "9xl3ohwce3",
+            "stage": "dap"
+        },
+        {
+            "basePath": "portfolio-future-values",
+            "restApiId": "qntzrcs2zh",
+            "stage": "dap"
+        },
+        {
+            "basePath": "contentstack",
+            "restApiId": "ciy5ug0dki",
+            "stage": "dap"
+        },
+        {
+            "basePath": "charts",
+            "restApiId": "qvao4hlkr7",
+            "stage": "dap"
+        },
+        {
+            "basePath": "allowed-origins",
+            "restApiId": "3g1ewntxcf",
+            "stage": "dap"
+        },
+        {
+            "basePath": "ria",
+            "restApiId": "d8r1et9enb",
+            "stage": "dap"
+        },
+        {
+            "basePath": "create-samesurf-room",
+            "restApiId": "ln3f8si868",
+            "stage": "dap"
+        },
+        {
+            "basePath": "program-config",
+            "restApiId": "2id4o3vklc",
+            "stage": "dap"
+        },
+        {
+            "basePath": "exclusions-inclusions",
+            "restApiId": "0gwyocmlp6",
+            "stage": "dap"
+        },
+        {
+            "basePath": "hostname",
+            "restApiId": "8jd1z39v40",
+            "stage": "dap"
+        },
+        {
+            "basePath": "content-stack",
+            "restApiId": "ln9jghot8c",
+            "stage": "dap"
+        },
+        {
+            "basePath": "google-analytics",
+            "restApiId": "7sa3oqqg6g",
+            "stage": "dap"
+        },
+        {
+            "basePath": "end-samesurf-session",
+            "restApiId": "dn5pm2ztad",
+            "stage": "dap"
+        },
+        {
+            "basePath": "robo-config",
+            "restApiId": "yemmr8ojo3",
+            "stage": "dap"
+        },
+        {
+            "basePath": "integration-int",
+            "restApiId": "ccrvdbzi4d",
+            "stage": "dap"
+        },
+        {
+            "basePath": "vendors",
+            "restApiId": "t3ew0dsng8",
+            "stage": "dap"
+        },
+        {
+            "basePath": "performance-data",
+            "restApiId": "7vs3xlbqef",
+            "stage": "dap"
+        },
+        {
+            "basePath": "market-data",
+            "restApiId": "zrk6aku9h4",
+            "stage": "dap"
+        },
+        {
+            "basePath": "api-keys",
+            "restApiId": "2tlomxa20m",
+            "stage": "dap"
+        },
+        {
+            "basePath": "header-config",
+            "restApiId": "elf1bsaurl",
+            "stage": "dap"
+        },
+        {
+            "basePath": "upload-allocations",
+            "restApiId": "ogzhycrebg",
+            "stage": "dap"
+        },
+        {
+            "basePath": "keycloak-settings",
+            "restApiId": "4dz5421q85",
+            "stage": "dap"
+        },
+        {
+            "basePath": "create-chat-room",
+            "restApiId": "cndnbdcm39",
+            "stage": "dap"
+        },
+        {
+            "basePath": "create-samesurf-room-cookies",
+            "restApiId": "osyruzzshh",
+            "stage": "dap"
+        },
+        {
+            "basePath": "questionnaire-content",
+            "restApiId": "e278j9mxkd",
+            "stage": "dap"
+        },
+        {
+            "basePath": "api-integration",
+            "restApiId": "i4atdsocsl",
+            "stage": "dap"
+        },
+        {
+            "basePath": "goal-types",
+            "restApiId": "gu6zrib0o0",
+            "stage": "dap"
+        },
+        {
+            "basePath": "join-samesurf-room",
+            "restApiId": "9s9pkk0q2j",
+            "stage": "dap"
+        },
+        {
+            "basePath": "get-mock-data",
+            "restApiId": "zp6b68axte",
+            "stage": "dap"
+        },
+        {
+            "basePath": "samesurf-room-status",
+            "restApiId": "rf26yxg4yh",
+            "stage": "dap"
+        },
+        {
+            "basePath": "mc-sample",
+            "restApiId": "gniykmcvsc",
+            "stage": "dap"
+        },
+        {
+            "basePath": "integration",
+            "restApiId": "rrd575f6kc",
+            "stage": "dap"
+        },
+        {
+            "basePath": "get-feature-flags",
+            "restApiId": "ag0at7vfr1",
+            "stage": "dap"
+        },
+        {
+            "basePath": "portfolio-future-values-out-of-box",
+            "restApiId": "cr37ul4v9i",
+            "stage": "dap"
+        },
+        {
+            "basePath": "account-settings-config",
+            "restApiId": "1eqxx8x9cj",
+            "stage": "dap"
+        },
+        {
+            "basePath": "error-messages",
+            "restApiId": "33b5d3axk3",
+            "stage": "dap"
+        },
+        {
+            "basePath": "firm-version",
+            "restApiId": "ydy18vwhwi",
+            "stage": "dap"
+        },
+        {
+            "basePath": "dwp-firm-data",
+            "restApiId": "ucf3i63r3j",
+            "stage": "dap"
+        },
+        {
+            "basePath": "update-google-analytics",
+            "restApiId": "bhu6monxm7",
+            "stage": "dap"
+        },
+        {
+            "basePath": "login",
+            "restApiId": "cuwxvxf8ne",
+            "stage": "dap"
+        },
+        {
+            "basePath": "(none)",
+            "restApiId": "v2o81suegf",
+            "stage": "dap"
+        },
+        {
+            "basePath": "content",
+            "restApiId": "cdtk2csedd",
+            "stage": "dap"
+        },
+        {
+            "basePath": "enabled",
+            "restApiId": "5u83qf9osc",
+            "stage": "dap"
+        },
+        {
+            "basePath": "create-samesurf-room-latest",
+            "restApiId": "ln3f8si868",
+            "stage": "latest"
+        },
+        {
+            "basePath": "transfer-money",
+            "restApiId": "o7vvy1ykpf",
+            "stage": "dap"
+        },
+        {
+            "basePath": "update-accounts-type",
+            "restApiId": "ypg1bp5upe",
+            "stage": "dap"
+        },
+        {
+            "basePath": "billing-plan",
+            "restApiId": "pdbo5qn2fc",
+            "stage": "dap"
+        },
+        {
+            "basePath": "samesurf-key",
+            "restApiId": "1ziw82t8v4",
+            "stage": "dap"
+        },
+        {
+            "basePath": "account-create-config",
+            "restApiId": "m2j9meigob",
+            "stage": "dap"
+        },
+        {
+            "basePath": "create-room",
+            "restApiId": "ln3f8si868",
+            "stage": "six"
+        },
+        {
+            "basePath": "create-new-onboarding-record",
+            "restApiId": "7tfv9h47na",
+            "stage": "dap"
+        },
+        {
+            "basePath": "find-samesurf-room",
+            "restApiId": "a26amvojsi",
+            "stage": "dap"
+        },
+        {
+            "basePath": "programlist",
+            "restApiId": "ca87efirfk",
+            "stage": "dap"
+        },
+        {
+            "basePath": "update-firm-version",
+            "restApiId": "xzbm2ggxai",
+            "stage": "dap"
+        },
+        {
+            "basePath": "questionnaire-config",
+            "restApiId": "274s1p0n4g",
+            "stage": "dap"
+        },
+        {
+            "basePath": "risk-levels",
+            "restApiId": "1vrx1c5gug",
+            "stage": "dap"
+        },
+        {
+            "basePath": "content-management",
+            "restApiId": "0elai2d7ei",
+            "stage": "dap"
+        },
+        {
+            "basePath": "appsettings",
+            "restApiId": "kdvew0mv19",
+            "stage": "dap"
+        },
+        {
+            "basePath": "update-accounts-category",
+            "restApiId": "ns1yo812ja",
+            "stage": "dap"
+        },
+        {
+            "basePath": "maintenance",
+            "restApiId": "bkx6ygqk4e",
+            "stage": "dap"
+        }
+    ]
+}
