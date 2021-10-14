@@ -1,0 +1,18 @@
+
+#!/usr/bin/env bash
+
+echo 'Unzip Lambda Functions'
+
+ls *.zip | \
+while read -r name; do
+    echo 'name=' $name
+    mkdir ${name%.zip}
+    mv $name ${name%.zip}
+    cd ${name%.zip}
+    unzip $name
+    rm $name
+    mv index.js ${name%.zip}.js
+    mv ${name%.zip}.js ../src
+    cd ..
+    rm -r ${name%.zip}
+done
